@@ -10,8 +10,7 @@ const Random = () => {
         const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
         const {data} = await axios.get(url); // promise
         const imageSrc = data.data.images.downsized_large.url;
-        console.log(imageSrc);
-        console.log(data);
+       
         setGif(imageSrc);
     }
     
