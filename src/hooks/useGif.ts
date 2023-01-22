@@ -4,7 +4,7 @@ import axios from 'axios';
 export interface GifProps {
     gif: string, 
     fetchGif: (tag: string) => Promise<void>,
-};
+}
 
 //Api Key
 const API_KEY = process.env.REACT_APP_API_KEY;
