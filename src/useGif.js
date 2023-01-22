@@ -18,7 +18,7 @@ const useGif = (tag) => {
         fetchGif(tag);
     }, [tag]);
 
-    return gif;
+    return {gif, fetchGif};
 };
 
 export default useGif;
