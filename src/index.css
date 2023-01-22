@@ -1,6 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
 
 body {
     background-color: #ee5522;
@@ -33,9 +30,10 @@ h1 {
 
 input {
     margin-top: 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     letter-spacing: 0.7px;
     width: 200px;
+    height: 30px;
     font-size: large;
     outline: none;
     text-align: center;
@@ -47,8 +45,10 @@ button {
     outline: none;
     cursor: pointer;
     text-transform: uppercase;
-    border-radius: 50px;
+    border-radius: 30px;
     width: 200px;
+    height: 30px;
+    background-color: bisque;
     font-size: large;
     letter-spacing: 0.7px;
   }

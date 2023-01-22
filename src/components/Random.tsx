@@ -9,7 +9,7 @@ const Random = () => {
         <div className="container">
             <h1>Random Gif</h1>
             <img width="500" src={gif} alt="Random Gif" />
-            <button onClick={(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => fetchGif}>Click for New</button>
+            <button onClick={() => fetchGif}>Click for New</button>
         </div>
     );
 }

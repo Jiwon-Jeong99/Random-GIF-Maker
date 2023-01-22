@@ -12,7 +12,7 @@ const Tag = () => {
         <div className="container">
             <h1>Random {tag} Gif</h1>
             <img width="500" src={gif} alt="Random Gif" />
-            <input value={tag} onChange={(e) => setTag(e.target.value)} />
+            <input value={tag} onChange={(e) => setTag(e.target.value)} autoFocus/>
             <button onClick={handleClick}>Click for New</button>
         </div>
     );
