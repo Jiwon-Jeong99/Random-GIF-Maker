@@ -1,7 +1,6 @@
-/* eslint-disable import/no-unresolved */
 import React from "react";
-import Random from "./components/Random";
-import Tag from "./components/Tag";
+import Random from "components/Random";
+import Tag from "components/Tag";
 import './index.css';
 
 const App = () => (
