@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 
-import useGif from "../useGif";
+import useGif from "../hooks/useGif";
 
 const Tag = () => {
     const [tag, setTag] = useState('dogs');
     const {gif, fetchGif} = useGif(tag);
 
-    const handleClick = () => fetchGif(tag);
+    const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => fetchGif(tag);
 
     return (
         <div className="container">
