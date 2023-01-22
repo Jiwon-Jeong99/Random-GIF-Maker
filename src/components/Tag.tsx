@@ -6,7 +6,7 @@ const Tag = () => {
     const [tag, setTag] = useState('dogs');
     const {gif, fetchGif} = useGif(tag);
 
-    const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => fetchGif(tag);
+    const handleClick = () => fetchGif(tag);
 
     return (
         <div className="container">
