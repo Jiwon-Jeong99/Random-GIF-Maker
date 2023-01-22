@@ -5,11 +5,13 @@ import useGif from "../hooks/useGif";
 const Random = () => {
     const {gif, fetchGif} = useGif();
 
+    const handleClick = () => fetchGif();
+
     return (
         <div className="container">
             <h1>Random Gif</h1>
             <img width="500" src={gif} alt="Random Gif" />
-            <button onClick={() => fetchGif}>Click for New</button>
+            <button onClick={handleClick}>Click for New</button>
         </div>
     );
 }

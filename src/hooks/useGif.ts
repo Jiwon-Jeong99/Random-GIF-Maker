@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export interface GifProps {
     gif: string, 
-    fetchGif: (tag: string) => Promise<void>,
+    fetchGif: (tag?: string) => Promise<void>,
 }
 
 //Api Key
@@ -13,7 +13,7 @@ const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
 const useGif = (tag?: string): GifProps => {
     const [gif, setGif] = useState<string>('');
 
-    const fetchGif = async (tag?: string): Promise<void> => {
+    const fetchGif = async (tag?: string) => {
         const {data} = await axios.get(tag ? `${url}&tag=${tag}` : url); // promise
         const imageSrc = data.data.images.downsized_large.url;
         
