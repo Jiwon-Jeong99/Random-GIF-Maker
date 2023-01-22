@@ -1,3 +1,4 @@
 ## Random GIF Maker
-![image](https://user-images.githubusercontent.com/82459123/213941032-95919e67-d10c-45b6-8e82-78e93c48aba6.png)
+![image](https://user-images.githubusercontent.com/82459123/213941104-955d1de2-65cb-4d2b-973b-ead3b617bb9b.png)
+
 
